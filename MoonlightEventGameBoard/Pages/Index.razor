@@ -1,0 +1,55 @@
+﻿@page "/"
+
+<style>
+    .vertical-wrap{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .horizontal-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .default-game-btn {
+        padding: 0;
+        border: none;
+        font-weight: bold;
+        font-size: 3vw;
+        outline: none !important;
+    }
+
+    .number-btn {
+        background: #FFFFFFDA;
+    }
+
+    .number-btn-disabled {
+        background: #CCC;
+        opacity: 0.9;
+    }
+
+    .default-label {
+        font-size: 3vw;
+        margin: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .score-container-label {
+        border: 2px solid;
+    }
+
+</style>
+
+<div class="vertical-wrap" style="height: 100%; width: 100%; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);">
+    This is where we start
+</div>

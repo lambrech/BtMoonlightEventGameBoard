@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonlightEventGameBoard", "MoonlightEventGameBoard\MoonlightEventGameBoard.csproj", "{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50571D89-4BBF-4360-B3E0-4CCAB304F3B8}
+	EndGlobalSection
+EndGlobal
