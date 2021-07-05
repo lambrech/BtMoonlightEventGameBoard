@@ -58,8 +58,9 @@ namespace MoonlightEventGameBoard.Pages
 
         private void CalcSize()
         {
-            var maxPartWidth = (this.browser.Width / 13) - 8;
-            var maxPartHeight = (int)((this.browser.Height * 0.18) - 16);
+            var maxPartWidth = (int)((this.browser.Width / 4 * 0.8) / (2 * 1.5));
+            //var maxPartHeight = 100000;
+            var maxPartHeight = (int)((this.browser.Height * 0.9 * 0.2 / 2));
 
             this.Size = maxPartWidth < maxPartHeight ? maxPartWidth : maxPartHeight;
             this.StateHasChanged();

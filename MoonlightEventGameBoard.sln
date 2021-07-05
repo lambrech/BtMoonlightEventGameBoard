@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonlightEventGameBoard", "MoonlightEventGameBoard\MoonlightEventGameBoard.csproj", "{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoonlightEventGameBoard", "MoonlightEventGameBoard\MoonlightEventGameBoard.csproj", "{A07AC4AE-0E67-4E1F-95FA-B58BAE9B23ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD1DD72E-5A8D-4B77-90A1-C238459E657D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
