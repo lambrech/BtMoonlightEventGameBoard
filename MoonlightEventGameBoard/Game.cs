@@ -54,6 +54,8 @@
                 });
         }
 
+        public string GroupName { get; set; } = "<Euer Gruppenname>";
+
         public List<GameCategory> Categories { get; }
 
         public bool ShowDialog { get; set; }
@@ -184,12 +186,12 @@
         public static string R_1 = @"Zwei Väter und zwei Söhne stellen sich nebeneinander vor einem großen Spiegel. Doch im Spiegelbild sind nur drei Personen zu sehen. Wie kann das sein?";
         public static string R_2 = @"Welcher Vogel kann seinen eigenen Namen rufen?";
         public static string R_3 = @"Wie kann man 1 Liter Wasser in einem Sieb transportieren?";
-        public static string R_4 = @"Löst dieses Kreuzworträtsel für Kinder. (Anlage R4)";
-        public static string R_5 = @"Finde die 12 Fehler. (Anlage R5)";
-        public static string R_6 = @"Welche 3 Würfel wurden falsch dargestellt? (Anlage R6)";
-        public static string R_7 = @"Welche Wörter können thematisch zum Bild passen? (Anlage R7)";
-        public static string R_8 = @"Löst das Sudoku  (Anlage R8).";
-        public static string R_9 = @"Welcher bekannte Spruch verbirgt sich in dieser Wortschlange? (Anlage R9)";
+        public static string R_4 = @"Löst dieses Kreuzworträtsel für Kinder.<br />(Anlage R4)";
+        public static string R_5 = @"Finde die 12 Fehler.<br />(Anlage R5)";
+        public static string R_6 = @"Welche 3 Würfel wurden falsch dargestellt?<br />(Anlage R6)";
+        public static string R_7 = @"Welche Wörter können thematisch zum Bild passen?<br />(Anlage R7)";
+        public static string R_8 = @"Löst das Sudoku.<br />(Anlage R8).";
+        public static string R_9 = @"Welcher bekannte Spruch verbirgt sich in dieser Wortschlange?<br />(Anlage R9)";
         public static string R_10 = @"In den exklusiven Buchstabenclub dürfen nur sehr privilegierte Buchstaben eintreten. Beim letzten Treffen hat sich ein Buchstabe Zutritt verschafft, der nicht zur auserwählten Schicht gehört. Welcher Buchstabe war das?<br />P G D B L C S  (Anlage R10)";
 
         public static string A_1 = @"Messt eine Strecke von 15 Metern ab. Jeder muss einmal in der Schubkarrenposition auf die andere Seite kommen.";
@@ -203,16 +205,16 @@
         public static string A_9 = @"Baut einen kleinen Hindernissparcour (mindestens 15m + 3 Hindernisse). Jeder der Gruppe muss einmal blind durch den Parcour durchgeleitet werden- nur durch die Stimme der anderen.";
         public static string A_10 = @"Macht ein Foto mit eurem Ortsschild am Ortseingang.";
 
-        public static string K_1 = @"Malt dieses Bild vollständig aus. Benutzt dafür eure schwache Hand. (Anlage K1)";
+        public static string K_1 = @"Malt dieses Bild vollständig aus. Benutzt dafür eure schwache Hand.<br />(Anlage K1)";
         public static string K_2 = @"Baut aus drei kleinen Stöcken (oder Ästen. Hauptsache aus der Natur) ein Dreibein, dass von alleine steht und macht ein Foto davon.";
         public static string K_3 = @"Baut das CVJM-Dreieck nach inkl. Schriftzug (mit Gegenständen eurer Wahl. Nicht malen)";
         public static string K_4 = @"Joker: Glückwunsch, diese Aufgabe habt ihr automatisch geschafft.";
         public static string K_5 = @"Nehmt als Kleingruppe ein mit Wasser gegurgeltes Lied auf. Alle haben Wasser im Mund und gurgeln dasselbe Lied. Nehmt das ganze per Video auf und zeigt es einer Person, die nicht zu eurer Kleingruppe gehört. Wenn sie euer Lied richtig errät, ist die Aufgabe geschafft.";
-        public static string K_6 = @"Vervollständigt dieses Bild richtig. (Anlage K6)";
+        public static string K_6 = @"Vervollständigt dieses Bild richtig.<br />(Anlage K6)";
         public static string K_7 = @"Schreibt einen lieben Brief an die beiden Badentreffmoderatoren, in dem ihr die beiden überschwänglich lobt (Mind. 100 Wörter). Folgende Wörter müssen vorkommen: 'stark', 'überragend', 'Wetter', 'egal', 'Deutschland ist stabil'). Schickt den Brief an: CVJM Baden, z.H.v. Matthias Kerschbaum, Mühlweg 10, 76703 Kraichtal";
         public static string K_8 =
             @"Schreibt ein Gedicht über das Thema ""Deutschland ist bei der EM ausgeschieden"" und tragt es einer Person vor, die nicht zu eurer Kleingruppe gehört. Erst wenn sie das Gedicht vollständig gehört hat und am Schluss sagt ""das war wirklich ein sehr schönes Gedicht"" ist die Aufgabe geschafft.";
-        public static string K_9 = @"Faltet eine Origami Taube nach dieser Anleitung. (Anlage K9)";
+        public static string K_9 = @"Faltet eine Origami Taube nach dieser Anleitung.<br />(Anlage K9)";
         public static string K_10 = @"Bemalt mind. 3 Personen aus eurer Kleingruppe mit Schlamm im Gesicht.";
     }
 }

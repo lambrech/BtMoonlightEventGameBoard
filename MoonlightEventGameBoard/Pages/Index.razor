@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using System.Globalization
+@using System.Runtime.CompilerServices
 
 <style>
     .vertical-wrap{
@@ -74,13 +75,27 @@
     @* ReSharper restore InvalidValue *@
     @* ReSharper restore CssNotResolved *@
 
-    <div style="height: 10%; width: 100%; background: black"></div>
+    <div class="horizontal-wrap" style="height: 10%; width: 100%; background: #666666; border: 3px solid; justify-content: space-between; align-items: center; font-size: 2.5vw; color: white; border-color: black">
+        <div class="horizontal-wrap" style="margin: 0 2.5%">
+            <label style="margin: 0">Punktestand:</label>
+            <label style="margin: 0 1vw; font-weight: bold">@this.Game.Categories.SelectMany(x => x.Levels).SelectMany(x => x.Challenges).Where(x => x.IsDone).Sum(x => x.Score)</label>
+        </div>
+        
+        <div class="horizontal-wrap" style="margin: 0 2.5%">
+            <label style="margin: 0">Gruppenname:</label>
+            <input style="margin: 0 1vw; border: none; background: transparent; color: white" @bind="@this.Game.GroupName" @bind:event="oninput"/>
+        </div>
+        
+        <div style="margin: 0 2.5%">
+            <label style="margin: 0">@(DateTime.Now.ToString("HH:mm:ss"))</label>
+        </div>
+    </div>
     
     <div class="horizontal-wrap" style="height: 90%; width: 100%">
         @foreach (var category in this.Game.Categories)
         {
             <div class="vertical-wrap" style="height: 100%; width: @(((double)100 / (double)this.Game.Categories.Count).ToString(CultureInfo.InvariantCulture))%; background: @category.Color">
-                <div class="horizontal-wrap" style="width: 90%; height: 8%; font-size: 3.5vw; text-align: center; align-self: center"><label style="margin: 0">@category.Title</label></div>
+                <div class="horizontal-wrap" style="width: 90%; height: 8%; font-size: 3.5vw; text-align: center; align-self: center"><label style="margin: 1vw 0 0 0; font-weight: bold">@category.Title</label></div>
                 @foreach (var level in category.Levels)
                 {
                     @*<div class="challenge-wrap" style="width: 100%; height: @(((double)100 / 6 * (level.Challenges.Count > 2 ? 2 : 1)).ToString(CultureInfo.InvariantCulture))%">*@
@@ -108,7 +123,8 @@
            <div class="modal-dialog" style="max-width: none" role="document">  
                <div class="modal-content">  
                    <div class="vertical-wrap" style="padding: 3%">
-                       <p style="font-weight: bold; font-size: 2vw; margin: 2%;">@this.Game.DialogChallenge?.Description</p>
+                       <p style="font-weight: bold; font-size: 2vw; margin: 2%;">@(this.Game.DialogChallenge?.Description == null ? new MarkupString() : new MarkupString(this.Game.DialogChallenge.Description))</p>
+                       @*<p style="font-weight: bold; font-size: 2vw; margin: 2%;">@((MarkupString)"Test<br />Blub")</p>*@
                        <div class="horizontal-wrap" style="width: 30%; align-self: flex-end">
                            <button class="btn btn-outline-primary btn-sm" style="width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px;" @onclick="@(() => { this.Game.CloseDialog(true); })">Ja</button>
                            <button class="btn btn-outline-primary btn-sm" style="width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px;" @onclick="@(() => { this.Game.CloseDialog(false); })">Nein</button>

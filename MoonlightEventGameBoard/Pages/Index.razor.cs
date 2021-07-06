@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MoonlightEventGameBoard.Pages
 {
+    using System.Threading;
+
     public partial class Index : IDisposable
     {
         // We can also capture the browser's width / height if needed. We hold the value here.
@@ -28,12 +30,16 @@ namespace MoonlightEventGameBoard.Pages
 
         public double? DevicePixelRatio { get; set; }
 
+        private Timer? updateTimer;
+
         void IDisposable.Dispose()
         {
             // Always use IDisposable in your component to unsubscribe from the event.
             // Be a good citizen and leave things how you found them. 
             // This way event handlers aren't called when nobody is listening.
             this.Listener.OnResized -= this.WindowResized;
+
+            this.updateTimer?.Dispose();
         }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -44,6 +50,7 @@ namespace MoonlightEventGameBoard.Pages
 
                 // Subscribe to the OnResized event. This will do work when the browser is resized.
                 this.Listener.OnResized += this.WindowResized;
+                this.updateTimer = new Timer(_ => { this.StateHasChanged(); }, null, 1000, 1000);
             }
         }
 
