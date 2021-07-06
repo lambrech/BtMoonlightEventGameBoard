@@ -16,40 +16,40 @@
                         "Red",
                         new[]
                         {
-                            new CategoryLevel(20, new[] { "L1_Desc1", "L1_Desc2", "L1_Desc3", "L1_Desc4", }),
-                            new CategoryLevel(40, new[] { "L2_Desc1", "L2_Desc2", "L2_Desc3", }),
-                            new CategoryLevel(70, new[] { "L3_Desc1", "L3_Desc2", }),
-                            new CategoryLevel(150, new[] { "L4_Desc1", })
+                            new CategoryLevel(20, new[] { ChallengeTexts.F_1, ChallengeTexts.F_2, ChallengeTexts.F_3, ChallengeTexts.F_4, }),
+                            new CategoryLevel(40, new[] { ChallengeTexts.F_5, ChallengeTexts.F_6, ChallengeTexts.F_7, }),
+                            new CategoryLevel(70, new[] { ChallengeTexts.F_8, ChallengeTexts.F_9, }),
+                            new CategoryLevel(150, new[] { ChallengeTexts.F_10, })
                         }.ToList()),
                     new GameCategory(
                         "Rätsel",
                         "Green",
                         new[]
                         {
-                            new CategoryLevel(20, new[] { "L1_Desc1", "L1_Desc2", "L1_Desc3", "L1_Desc4", }),
-                            new CategoryLevel(40, new[] { "L2_Desc1", "L2_Desc2", "L2_Desc3", }),
-                            new CategoryLevel(70, new[] { "L3_Desc1", "L3_Desc2", }),
-                            new CategoryLevel(150, new[] { "L4_Desc1", })
+                            new CategoryLevel(20, new[] { ChallengeTexts.R_1, ChallengeTexts.R_2, ChallengeTexts.R_3, ChallengeTexts.R_4, }),
+                            new CategoryLevel(40, new[] { ChallengeTexts.R_5, ChallengeTexts.R_6, ChallengeTexts.R_7, }),
+                            new CategoryLevel(70, new[] { ChallengeTexts.R_8, ChallengeTexts.R_9, }),
+                            new CategoryLevel(150, new[] { ChallengeTexts.R_10, })
                         }.ToList()),
                     new GameCategory(
                         "Aktives",
                         "RoyalBlue",
                         new[]
                         {
-                            new CategoryLevel(20, new[] { "L1_Desc1", "L1_Desc2", "L1_Desc3", "L1_Desc4", }),
-                            new CategoryLevel(40, new[] { "L2_Desc1", "L2_Desc2", "L2_Desc3", }),
-                            new CategoryLevel(70, new[] { "L3_Desc1", "L3_Desc2", }),
-                            new CategoryLevel(150, new[] { "L4_Desc1", })
+                            new CategoryLevel(20, new[] { ChallengeTexts.A_1, ChallengeTexts.A_2, ChallengeTexts.A_3, ChallengeTexts.A_4, }),
+                            new CategoryLevel(40, new[] { ChallengeTexts.A_5, ChallengeTexts.A_6, ChallengeTexts.A_7, }),
+                            new CategoryLevel(70, new[] { ChallengeTexts.A_8, ChallengeTexts.A_9, }),
+                            new CategoryLevel(150, new[] { ChallengeTexts.A_10, })
                         }.ToList()),
                     new GameCategory(
                         "Kreatives",
                         "Orange",
                         new[]
                         {
-                            new CategoryLevel(20, new[] { "L1_Desc1", "L1_Desc2", "L1_Desc3", "L1_Desc4", }),
-                            new CategoryLevel(40, new[] { "L2_Desc1", "L2_Desc2", "L2_Desc3", }),
-                            new CategoryLevel(70, new[] { ChallengeTexts.K_8, "L3_Desc2", }),
-                            new CategoryLevel(150, new[] { "L4_Desc1", })
+                            new CategoryLevel(20, new[] { ChallengeTexts.K_1, ChallengeTexts.K_2, ChallengeTexts.K_3, ChallengeTexts.K_4, }),
+                            new CategoryLevel(40, new[] { ChallengeTexts.K_5, ChallengeTexts.K_6, ChallengeTexts.K_7, }),
+                            new CategoryLevel(70, new[] { ChallengeTexts.K_8, ChallengeTexts.K_9, }),
+                            new CategoryLevel(150, new[] { ChallengeTexts.K_10, })
                         }.ToList()),
                 });
         }
