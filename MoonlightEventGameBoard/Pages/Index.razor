@@ -125,7 +125,9 @@
                    <div class="vertical-wrap" style="padding: 3%">
                        <p style="font-weight: bold; font-size: 2vw; margin: 2%;">@(this.Game.DialogChallenge?.Description == null ? new MarkupString() : new MarkupString(this.Game.DialogChallenge.Description))</p>
                        @*<p style="font-weight: bold; font-size: 2vw; margin: 2%;">@((MarkupString)"Test<br />Blub")</p>*@
-                       <div class="horizontal-wrap" style="width: 30%; align-self: flex-end">
+                       <div class="horizontal-wrap" style="align-self: center">
+                           <label style="font-size: 2vw; margin: 5%; white-space: nowrap">Aufgabe geschafft?</label>
+                           @*<label style="font-size: 1.5vw; margin: 5%">geschafft?</label>*@
                            <button class="btn btn-outline-primary btn-sm" style="min-width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px;" @onclick="@(() => { this.Game.CloseDialog(true); })">Ja</button>
                            <button class="btn btn-outline-primary btn-sm" style="min-width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px;" @onclick="@(() => { this.Game.CloseDialog(false); })">Nein</button>
                        </div>
