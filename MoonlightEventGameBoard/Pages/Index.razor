@@ -128,7 +128,7 @@
                        <div class="horizontal-wrap" style="align-self: center">
                            <label style="font-size: 2vw; margin: 5%; white-space: nowrap">Aufgabe geschafft?</label>
                            @*<label style="font-size: 1.5vw; margin: 5%">geschafft?</label>*@
-                           <button class="btn btn-outline-primary btn-sm" style="min-width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px;" @onclick="@(() => { this.Game.CloseDialog(true); })">Ja</button>
+                           <button class="btn btn-outline-primary btn-sm" style="min-width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px; margin-right: 1vw;" @onclick="@(() => { this.Game.CloseDialog(true); })">Ja</button>
                            <button class="btn btn-outline-primary btn-sm" style="min-width: 40%; font-size: 2vw; border-radius: @((this.Size * 0.1).ToString(CultureInfo.InvariantCulture))px;" @onclick="@(() => { this.Game.CloseDialog(false); })">Nein</button>
                        </div>
                    </div>  
