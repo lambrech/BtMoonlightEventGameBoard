@@ -211,9 +211,9 @@
         public static string K_4 = @"Joker: Glückwunsch, diese Aufgabe habt ihr automatisch geschafft.";
         public static string K_5 = @"Nehmt als Kleingruppe ein mit Wasser gegurgeltes Lied auf. Alle haben Wasser im Mund und gurgeln dasselbe Lied. Nehmt das ganze per Video auf und zeigt es einer Person, die nicht zu eurer Kleingruppe gehört. Wenn sie euer Lied richtig errät, ist die Aufgabe geschafft.";
         public static string K_6 = @"Vervollständigt dieses Bild richtig.<br />(Anlage K6)";
-        public static string K_7 = @"Schreibt einen lieben Brief an die beiden Badentreffmoderatoren, in dem ihr die beiden überschwänglich lobt (Mind. 100 Wörter). Folgende Wörter müssen vorkommen: 'stark', 'überragend', 'Wetter', 'egal', 'Deutschland ist stabil'). Schickt den Brief an: CVJM Baden, z.H.v. Matthias Kerschbaum, Mühlweg 10, 76703 Kraichtal";
+        public static string K_7 = @"Schreibt einen lieben Brief an die Band des KonfiCastles, in dem ihr sie überschwänglich lobt (Mind. 100 Wörter). Folgende Wörter müssen vorkommen: klasse, wir küssen eure Augen, Schlagzeug, Helene Fischer, Apache, überragend, Tournee.";
         public static string K_8 =
-            @"Schreibt ein Gedicht über das Thema ""Deutschland ist bei der EM ausgeschieden"" und tragt es einer Person vor, die nicht zu eurer Kleingruppe gehört. Erst wenn sie das Gedicht vollständig gehört hat und am Schluss sagt ""das war wirklich ein sehr schönes Gedicht"" ist die Aufgabe geschafft.";
+            @"Schreibt ein Gedicht über das Thema ""Der KSC wird Deutscher Meister"" und tragt es einer Person vor, die nicht zu eurer Kleingruppe gehört. Erst wenn sie das Gedicht vollständig gehört hat und am Schluss sagt ""das war wirklich ein sehr schönes Gedicht"" ist die Aufgabe geschafft.";
         public static string K_9 = @"Faltet eine Origami Taube nach dieser Anleitung.<br />(Anlage K9)";
         public static string K_10 = @"Bemalt mind. 3 Personen aus eurer Kleingruppe mit Schlamm im Gesicht.";
     }
